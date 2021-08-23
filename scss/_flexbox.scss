@@ -1,0 +1,75 @@
+// flexbox
+
+
+// HOME
+
+
+
+// NOSOTROS
+.nosotros-section{
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 100px;
+}
+.nosotros-container h1, .nosotros-container h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    font-size: 3rem;
+    /* margin-top: 30px; */
+}
+
+
+// SUCURSALES
+
+
+
+
+// MENU  
+.linkSucursales{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 10px;
+    margin: 20px 50px;
+    a{
+        font-size: 3rem;
+        text-decoration: none;
+        color: #FFC93C;
+        font-weight: 900;
+    }
+}
+
+
+
+// CONTACTO
+
+.contact-flexcontainer{
+    position: relative;
+    top: 50px;
+    display: flex;
+    max-height: 60em;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #0f3742;
+    margin: 0px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #FF6F3C;
+}
+.contact-form__img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    img{
+        margin: auto;
+        padding: 7px;
+        width: 30rem;
+    }
+}
