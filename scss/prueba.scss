@@ -58,7 +58,15 @@ h1{
 #footer{
     background-color: #155263;
 }
-
+.footer__icono{
+    i{
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;
+        color: #FFC93C;
+        letter-spacing: 10px;
+    }
+}
 
 
 
@@ -139,13 +147,13 @@ h1{
 /* Nosotros */
 .nosotros-container{
     height: 100rem;
-    background: #F0E3CA;
+    background: #000    ;
     
     h1{
-        color: #155263;
+        color: #FFC93C;
     }
     h2{
-        color: #FF6F3C;
+        color: #FFC93C;
     }
 }
 .carousel-inner{
@@ -161,8 +169,8 @@ h1{
     margin: 20px;
     border-radius: 100px;
     border: solid 3px #FF6F3C;
-    box-shadow: 0 4px 4px #FFC93C;
-    background-color: #FF9A3C;
+    box-shadow: 0 4px 4px #FF6F3C;
+    background-color: #FFC93C;
     text-align: center;
     transition: 0.5s all;
     cursor: pointer;
