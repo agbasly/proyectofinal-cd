@@ -158,8 +158,8 @@ h1 {
 
 .indexContainer {
   /* contenedor del html */
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF6F3C), to(#155263));
-  background: linear-gradient(to bottom, #FF6F3C, #155263);
+  background-image: url(../assets/images/pexels-cottonbro-4676410.jpg);
+  background-size: cover;
 }
 
 .main-container {
@@ -211,12 +211,12 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  color: #155263;
+  color: #000;
 }
 
 .marca-container a {
   text-decoration: none;
-  color: #FF9A3C;
+  color: #000;
   font-size: 2rem;
 }
 
