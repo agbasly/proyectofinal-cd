@@ -1,28 +1,23 @@
-/* Paleta de colores:
-#155263: Azul
-#FF6F3C: naranja
-#FF9CA3: Naranja claro
-#FFC93C: Amarillo
-*/
-
-
+// Imports
 @import "flexbox";
 @import "grilla";
-
+@import "variables";
 
 
 /* Estilos por default*/
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
 }
 /* A todos los HTML */
 h1{
-    color: #FFC93C;
+    color: $azulclaro;
     font-weight: 900;
 }
+
+
 /* Nav */
 .nav-item{
     padding: 0 20px;
@@ -30,51 +25,34 @@ h1{
         font-size: 1.5rem;
         padding-top: 7px;
         text-decoration: none;
-        color: #FFC93C;
+        color: $blanco;
     }
 }
+
+
 .navbar{
     padding-top: 0px;
     padding-bottom: 0px;
-    background: #FF6F3C;
+    background: $celeste;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* footer */
 #footer{
-    background-color: #155263;
+    background-color: $celeste;
+}
+.footer{
+    color: $blanco;
 }
 .footer__icono{
     i{
         font-size: 1.5rem;
         padding: 10px;
         text-decoration: none;
-        color: #FFC93C;
+        color: $blanco;
         letter-spacing: 10px;
     }
 }
-
-
-
-
-
-
-
-
 
 
 /* Home */
@@ -82,18 +60,22 @@ h1{
     margin: 10px;
     height: 200px;
 }
+
+
 .indexContainer{
     /* contenedor del html */
-    // background: linear-gradient(to bottom, #FF6F3C, #155263);
-    background-image: url(../assets/images/pexels-cottonbro-4676410.jpg);
+    background-image: url(../assets/images/home.jpg);
     background-size: cover;
 }
+
+
 .main-container{
     /* conteiner del main */
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+
 
 .marca-container{
     /* estilos a la caja principal del main */
@@ -108,7 +90,8 @@ h1{
         text-align: center;
         display: block;
         font-size: 5rem;
-        letter-spacing: 5px;
+        font-weight: 900;
+        // letter-spacing: 5px;
         margin: 0 5px;
         span{
             font-size: 5rem;
@@ -116,53 +99,53 @@ h1{
             margin: 0 5px;
         }
     }
+
     p{
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
         font-size: 3rem;
-        font-weight: 700;
+        font-weight: 900;
         text-align: center;
-        color: #000;
+        color: $celeste;
     }
+
     a{
         text-decoration: none;
-        color: #000;
+        color: $amarillo;
         font-size: 2rem;
     }
+    
     hr{
         width: 8rem;
         margin-left: 20px;
     }
+
     a:hover{
         color: gray;
     }
+   
 } 
-
-
-
-
-
-
-
-
 
 
 /* Nosotros */
 .nosotros-container{
     height: 100rem;
-    background: #000    ;
-    
+    background: $blanco;
     h1{
-        color: #FFC93C;
+        color: $azul;
+        font-weight: 900;
     }
     h2{
-        color: #FFC93C;
+        color: $azul;
     }
 }
+
+
 .carousel-inner{
     max-height: 39rem;
     position: relative;
     top: 4rem;
 }
+
 
 .nosotros__article{
     width: 330px;
@@ -170,29 +153,35 @@ h1{
     padding: 30px;
     margin: 20px;
     border-radius: 100px;
-    border: solid 3px #FF6F3C;
-    box-shadow: 0 4px 4px #FF6F3C;
-    background-color: #FFC93C;
+    border: solid 3px $azul;
+    box-shadow: 0 4px 4px $azulclaro;
+    background-color: $celeste;
     text-align: center;
     transition: 0.5s all;
     cursor: pointer;
 }
+
+
 .nosotros__article:hover{
     transform: translate(-1rem);
-    box-shadow: 0px 16px 20px #FF6F3C ;
+    box-shadow: 0px 16px 20px $azulclaro;
 }
+
+
 article img{
     height: 200px;
 }
+
+
 article h3{
     margin: 10px;
     font-size: 2rem;
 }
+
+
 article p{
     margin: 0px 5px
 }
-
-
 
 
 @media only screen and (max-width:1110px){
@@ -200,6 +189,7 @@ article p{
         height: 150rem;
     }
 }
+
 @media only screen and (max-width:380px){
     .nosotros__article{
         height: 600px;
@@ -210,24 +200,18 @@ article p{
 }
 
 
-
-
-
-
-
-
-
-
 /* Menu */
 .menu-container{
-    background: #F0E3CA;
+    background: $blanco;
     height: 60rem;
 }
+
 .menu-container__h1{
     font-size: 3rem;
     text-align: center;
     letter-spacing: 5px;
 }
+
 .monedas-container{
     ul{
         li{
@@ -239,6 +223,8 @@ article p{
         }
     }
 }
+
+
 @media only screen and (max-width:1800px){
     .grid-container{
         grid-template-columns: 1fr 1fr;
@@ -254,6 +240,7 @@ article p{
         margin-right: auto;
     }
 }
+
 @media only screen and (max-width:768px){
     .grid-container{
         grid-template-columns: 1fr;
@@ -263,16 +250,12 @@ article p{
         height: 230rem;
     }
 }
+
 @media only screen and (max-width:510px){
     .menu-container{
         height: 250rem;
     }
 }
-
-
-
-
-
 
 /* Sucursales */
 iframe{
@@ -281,9 +264,10 @@ iframe{
     left: auto;
     right: auto;
 }
+
 .sucursales-container{
     height: 100rem;
-    background: #F0E3CA;
+    background: $blanco;
     h1{
         font-size: 3rem;
         text-align: center;
@@ -291,50 +275,62 @@ iframe{
         margin-bottom: 10px;
     }
 }
-.boxes p{
-    padding-left: 18px;
-}
-.imagen-grid{
-    height: 160px;
-    width: 180px;
-}
+
+.boxes{
+
+    p{
+        padding-left: 18px;
+    }
+    img{
+        background: $celeste;
+        height: 160px;
+        width: 180px;
+    }
+} 
+
+
 .shadow-pop-tr{
     animation:shadow-pop-tr .3s cubic-bezier(.47,0.000,.745,.715) both
 }
+
 @keyframes shadow-pop-tr{
     0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
 }
+
+@media only screen and (max-width:1101px){
+    .sucursales-container{
+        height: 150rem;
+    }
+}
+
 @media only screen and (max-width:768px){
     .menu{
         width: 100% !important;
         text-align: center;
     }
 }
+
 @media only screen and (max-width: 576px){
+    .sucursales-container{
+        height: 200rem;
+    }
     .boxes{
         flex-wrap: wrap;
         justify-content: center ;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 477px){
+    .sucursales-container{
+        height: 240rem;
+    }
+}
 
 
 /* Contacto */
 .contact-container{
     padding:  0.5 1rem;
-    background-color: #F0E3CA;
+    background-color: $blanco;
     height: 100vh;
     h1{
         font-size: 3rem;
@@ -343,7 +339,7 @@ iframe{
     }
     span{
         font-size: 3rem;
-        color: #FFC93C;
+        color: $amarillo;
     }
 }
 .contact-form{
@@ -356,7 +352,7 @@ iframe{
         resize: none;
     }
     input[type="submit"]{
-        background: #FF6F3C;
+        background: $azulclaro;
         padding: 12px;
     }
 }
@@ -365,21 +361,24 @@ iframe{
     padding: 10px;
     margin: 9px 0px;
     border: none;
-    border-bottom: 3px solid #FF6F3C;
+    border-bottom: 3px solid $celeste;
     background: none;
     color: white;
 }
 .contact-form__input:hover{
-    background: linear-gradient(to bottom, transparent, #333)
+    background: linear-gradient(to bottom, transparent, $celeste)
 }
 .contact-form__input:focus{
     outline: none;
-    background: linear-gradient(to bottom, transparent, #333);
+    background: linear-gradient(to bottom, transparent, $celeste);
 }
 
 @media only screen and (max-width:768px){
     .contact-form__img img{
         max-width: 20em;
+    }
+    .contact-container{
+        height: 59rem;
     }
 
 }

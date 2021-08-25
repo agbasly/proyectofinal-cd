@@ -1,5 +1,5 @@
 // flexbox
-
+@import "variables";
 
 // HOME
 
@@ -41,7 +41,7 @@
     a{
         font-size: 3rem;
         text-decoration: none;
-        color: #FFC93C;
+        color: $azul;
         font-weight: 900;
     }
 }
@@ -52,16 +52,16 @@
 
 .contact-flexcontainer{
     position: relative;
-    top: 50px;
+    top: 20px;
     display: flex;
     max-height: 60em;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    background: #0f3742;
+    background: $azul;
     margin: 0px 50px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #FF6F3C;
+    box-shadow: 0px 0px 10px 5px $celeste;
 }
 .contact-form__img{
     flex: 1;

@@ -9,7 +9,7 @@
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <!-- Script para los iconos -->
     <script src="https://kit.fontawesome.com/a80257998e.js" 
     crossorigin="anonymous"></script>
@@ -23,10 +23,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid" id="mainNav">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="/bootstrap/img/logo mc.png" alt="logodeburgershack" width="30" height="24" class="d-inline-block align-text-top text-primary">
-                    Burger Shack
-                </a>
+              <a class="navbar-brand" href="./index.html">
+                <img src="../assets/images/logo mc.png" alt="logodeburgershack" width="30" height="24" class="d-inline-block align-text-top text-primary">
+                Burger Shack
+            </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -68,10 +68,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/141777113?h=db5326bf73&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="d-block w-100" alt="Burger-1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>>
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/141777113?h=db5326bf73&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="d-block w-100" alt="Burger-1"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>>
               </div>
               <div class="carousel-item" data-bs-interval="10000">
-                <img src="https://github.com/Emprinnos/bootStrapCompleto/blob/main/img/slide2.jpg?raw=true" class="d-block w-100" alt="Burger-2">
+                <img src="../assets/images/pexels-edward-eyer-687824.jpg" class="d-block w-100" alt="Burger-2">
               </div>
               <div class="carousel-item" data-bs-interval="3000">
                 <img src="https://github.com/Emprinnos/bootStrapCompleto/blob/main/img/slide3.jpg?raw=true" class="d-block w-100" alt="Burger-3">
@@ -99,7 +102,7 @@
                 <p>Ofrecer el mejor servicio de comida rápida, con productos higiénicamente elaborados y con una esmerada y cordial atención al público.</p>
             </article>
             <article class="nosotros__article">
-                <img src="https://st4.depositphotos.com/13128258/20483/v/1600/depositphotos_204830362-stock-illustration-old-wooden-direction-sign.jpg" alt="futuro">
+                <img src="https://image.flaticon.com/icons/png/128/3023/3023987.png" alt="futuro">
                 <h3>Futuro</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem repellat tempora, dicta fuga quam sint nesciunt in quasi iusto sunt, eaque architecto fugit nemo deserunt, ut laborum? Facilis, quisquam!</p>
             </article>
@@ -107,11 +110,11 @@
     </div>
     <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap" id="footer">
         <p class="fs-5 px-3 pt-3 footer">Burger Shack &copy; Todos Los Derechos Reservados 2021</p>
-        <div id="iconos">
-         <a href="#"><i class="fab fa-facebook"></i></a>
-         <a href="#"><i class="fab fa-whatsapp"></i></a>
-         <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+        <div id="iconos" class="footer-socialmedia">
+          <a href="#" class="footer__icono"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="footer__icono"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer__icono"><i class="fab fa-instagram"></i></a>
+      </div>
     </footer>
 
     <!-- Script de Bootstrap -->
