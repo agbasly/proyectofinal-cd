@@ -10,11 +10,13 @@
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
+
 }
 /* A todos los HTML */
 h1{
     color: $azulclaro;
     font-weight: 900;
+
 }
 
 
@@ -73,7 +75,7 @@ h1{
     /* conteiner del main */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 70rem;
 }
 
 
