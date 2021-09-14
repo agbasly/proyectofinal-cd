@@ -15,17 +15,23 @@
     position: relative;
     margin: 90px 0px;
 }
-.nosotros-container h1, .nosotros-container h2{
+.nosotros-container h1{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     top: 40px;
     font-size: 3rem;
-    /* margin-top: 30px; */
+
 }
-
-
+.nosotros__titulo{
+    h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+}
 // SUCURSALES
 
 
