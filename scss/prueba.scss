@@ -13,49 +13,124 @@
 
 }
 /* A todos los HTML */
+body{
+    scroll-behavior: smooth;
+}
 h1{
-    color: $azulclaro;
+    color: $amarillo;
     font-weight: 900;
 
 }
-
+.navbar-toggler-icon{
+    color: $amarillo;
+}
 
 /* Nav */
+.navbar-brand{
+    color: $amarillo;
+}
 .nav-item{
     padding: 0 20px;
-    i{
-        font-size: 1.5rem;
-        padding-top: 7px;
-        text-decoration: none;
+    .nav-link{
+        font-size: 18px;
         color: $blanco;
     }
 }
-
-
 .navbar{
     padding-top: 0px;
     padding-bottom: 0px;
-    background: $celeste;
+    background: $azul;
 }
 
 
 /* footer */
-#footer{
-    background-color: $celeste;
-}
-.footer{
-    color: $blanco;
-}
-.footer__icono{
-    i{
-        font-size: 1.5rem;
-        padding: 10px;
-        text-decoration: none;
-        color: $blanco;
-        letter-spacing: 10px;
-    }
-}
 
+    .footer-dark {
+      padding:50px 0;
+      color: $amarillo;
+      background-color: $azul;
+      h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:20px;
+      }
+      ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:20px;
+        margin-bottom:0;
+        a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.6;
+          }
+      }
+      .item.text {
+        margin-bottom:36px;
+        p {
+            opacity:0.6;
+            margin-bottom:0;
+          }
+      }
+      .item.social {
+        text-align:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size:20px;
+            width:36px;
+            height:36px;
+            line-height:36px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+            margin:0 8px;
+            color: $amarillo;
+            opacity:0.75;
+          }
+      }
+      .copyright {
+        text-align:center;
+        padding-top:24px;
+        opacity:0.3;
+        font-size:13px;
+        margin-bottom:0;
+      }
+    }
+
+    .footer-dark ul a:hover {
+      opacity:0.8;
+    }
+    
+    @media (max-width:767px) {
+      .footer-dark .item:not(.social) {
+        text-align:center;
+        padding-bottom:20px;
+      }
+    }
+    @media (max-width:767px) {
+      .footer-dark .item.text {
+        margin-bottom:0;
+      }
+    }
+    
+    
+    @media (max-width:991px) {
+      .footer-dark .item.social {
+        text-align:center;
+        margin-top:20px;
+      }
+    }
+
+    
+    .footer-dark .item.social > a:hover {
+      opacity:0.9;
+      background-color: $azul;
+    }
 
 /* Home */
 .marca img{
@@ -131,9 +206,9 @@ h1{
 /* Nosotros */
 .nosotros-container{
     height: 100rem;
-    background: $blanco;
+    background: $azulclaro;
     h1{
-        color: $azul;
+        color: $amarillo;
         font-weight: 900;
     }
     h2{
@@ -144,20 +219,18 @@ h1{
 
 .carousel-inner{
     max-height: 39rem;
-    position: relative;
+    position: absolute;
     top: 4rem;
 }
-
 
 .nosotros__article{
     width: 330px;
     height: 480px;
     padding: 30px;
     margin: 20px;
-    border-radius: 100px;
-    border: solid 3px $azul;
-    box-shadow: 0 4px 4px $azulclaro;
-    background-color: $celeste;
+    border-radius: 70px;
+    box-shadow: 0 4px 4px $azul;
+    background-color: $azul;
     text-align: center;
     transition: 0.5s all;
     cursor: pointer;
@@ -166,35 +239,47 @@ h1{
 
 .nosotros__article:hover{
     transform: translate(-1rem);
-    box-shadow: 0px 16px 20px $azulclaro;
+    box-shadow: 0px 16px 20px $azul;
 }
 
 
-article img{
-    height: 200px;
-}
+article{
+    img{
+        height: 200px;
+    }
+    i{
+        font-size: 200px;
+        color: $celeste;
+    }
+    h3{
+        margin: 10px;
+        font-size: 2rem;
+        color: $amarillo;
+        font-weight: 600;
+    }
+    p{
+        color: $blanco;
+        margin: 0px 5px
+    }
+} 
 
 
-article h3{
-    margin: 10px;
-    font-size: 2rem;
-}
 
-
-article p{
-    margin: 0px 5px
-}
-
-
-@media only screen and (max-width:1110px){
+@media only screen and (max-width:1117px){
     .nosotros-container{
-        height: 150rem;
+        height: 170rem;
+    }
+    .nosotros-section{
+        margin-bottom: 1200px;
     }
 }
 
 @media only screen and (max-width:380px){
     .nosotros__article{
         height: 600px;
+    }
+    .nosotros-section{
+        margin-bottom: 1600px;
     }
     .nosotros-container{
         height: 170rem;
@@ -204,14 +289,18 @@ article p{
 
 /* Menu */
 .menu-container{
-    background: $blanco;
-    height: 60rem;
+    background: $azulclaro;
+    height: 100vh;
 }
 
 .menu-container__h1{
+    display: block;
     font-size: 3rem;
     text-align: center;
-    letter-spacing: 5px;
+    font-weight: 900;
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
 }
 
 .monedas-container{
@@ -221,6 +310,7 @@ article p{
             i{
                 font-size: 1.7rem;
                 padding: 10px;
+                color: $amarillo;
             }
         }
     }
@@ -269,7 +359,7 @@ iframe{
 
 .sucursales-container{
     height: 100rem;
-    background: $blanco;
+    background: $azulclaro;
     h1{
         font-size: 3rem;
         text-align: center;
@@ -279,9 +369,12 @@ iframe{
 }
 
 .boxes{
-
+    h3{
+        color: $amarillo;
+    }
     p{
         padding-left: 18px;
+        color: $blanco;
     }
     img{
         background: $celeste;
@@ -332,12 +425,16 @@ iframe{
 /* Contacto */
 .contact-container{
     padding:  0.5 1rem;
-    background-color: $blanco;
+    background-color: $azulclaro;
     height: 100vh;
     h1{
         font-size: 3rem;
         text-align: center;
         letter-spacing: 5px;
+        font-weight: 900;
+        position: relative;
+        top: 13px;
+        color: $amarillo;
     }
     span{
         font-size: 3rem;
